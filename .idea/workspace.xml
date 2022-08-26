@@ -56,7 +56,7 @@
       <recent name="com.vendingmachine" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All tests">
+  <component name="RunManager" selected="JUnit.VendingMachineTest.vendUpdatesMoneyAfterSale">
     <configuration name="All tests" type="JUnit" factoryName="JUnit">
       <module name="java-practice-vending-machine" />
       <option name="PACKAGE_NAME" value="" />
@@ -157,9 +157,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VendingMachineTest.vendUpdatesMoneyAfterSale" />
         <item itemvalue="JUnit.VendingMachineTest.vendReturnsItemWithChange" />
         <item itemvalue="JUnit.VendingMachineTest.vendingMachineCreated" />
-        <item itemvalue="JUnit.VendingMachineTest.vendUpdatesMoneyAfterSale" />
         <item itemvalue="JUnit.VendingMachineTest.vendUpdatesItemQuantity" />
         <item itemvalue="JUnit.VendingMachineTest.vendReturnsInvalidSelection" />
       </list>
@@ -177,7 +177,7 @@
       <workItem from="1661300153909" duration="863000" />
       <workItem from="1661435966245" duration="5666000" />
       <workItem from="1661461418683" duration="6376000" />
-      <workItem from="1661544856915" duration="2932000" />
+      <workItem from="1661544856915" duration="4092000" />
     </task>
     <task id="LOCAL-00001" summary="Initial config">
       <created>1661179840207</created>

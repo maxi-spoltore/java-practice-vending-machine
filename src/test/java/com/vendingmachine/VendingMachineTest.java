@@ -88,5 +88,8 @@ public class VendingMachineTest {
         machine.vend("A01", 0.60);
         double money = machine.getMoney();
         Assert.assertEquals(100.60, money, 0.001);
+
+        String result = machine.vend("A02", 10.00);
+        Assert.assertEquals("Invalid selection! : Money in vending machine = 100.60", result);
     }
 }
