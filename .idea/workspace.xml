@@ -7,6 +7,7 @@
     <list default="true" id="ca3b448c-da72-4f4b-a75c-ce78d7fc50cf" name="Changes" comment="Initial config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vendingmachine/VendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vendingmachine/VendingMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/vendingmachine/VendingMachineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vendingmachine/VendingMachineTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit3 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -35,18 +36,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit3&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="junit.framework.TestCase" />
@@ -55,23 +56,18 @@
       <recent name="com.vendingmachine" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VendingMachineTest">
-    <configuration name="VendingMachineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.VendingMachineTest.vendUpdatesMoneyAfterSale">
+    <configuration name="All tests" type="JUnit" factoryName="JUnit">
       <module name="java-practice-vending-machine" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.vendingmachine.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.vendingmachine" />
-      <option name="MAIN_CLASS_NAME" value="com.vendingmachine.VendingMachineTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VendingMachineTest.firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VendingMachineTest.vendReturnsInvalidSelection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-practice-vending-machine" />
       <extension name="coverage">
         <pattern>
@@ -81,16 +77,91 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.vendingmachine" />
       <option name="MAIN_CLASS_NAME" value="com.vendingmachine.VendingMachineTest" />
-      <option name="METHOD_NAME" value="firstTest" />
+      <option name="METHOD_NAME" value="vendReturnsInvalidSelection" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VendingMachineTest.vendReturnsItemWithChange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-practice-vending-machine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vendingmachine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vendingmachine" />
+      <option name="MAIN_CLASS_NAME" value="com.vendingmachine.VendingMachineTest" />
+      <option name="METHOD_NAME" value="vendReturnsItemWithChange" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VendingMachineTest.vendUpdatesItemQuantity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-practice-vending-machine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vendingmachine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vendingmachine" />
+      <option name="MAIN_CLASS_NAME" value="com.vendingmachine.VendingMachineTest" />
+      <option name="METHOD_NAME" value="vendUpdatesItemQuantity" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VendingMachineTest.vendUpdatesMoneyAfterSale" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-practice-vending-machine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vendingmachine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vendingmachine" />
+      <option name="MAIN_CLASS_NAME" value="com.vendingmachine.VendingMachineTest" />
+      <option name="METHOD_NAME" value="vendUpdatesMoneyAfterSale" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VendingMachineTest.vendingMachineCreated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-practice-vending-machine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vendingmachine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vendingmachine" />
+      <option name="MAIN_CLASS_NAME" value="com.vendingmachine.VendingMachineTest" />
+      <option name="METHOD_NAME" value="vendingMachineCreated" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.All tests" />
+      <item itemvalue="JUnit.VendingMachineTest.vendingMachineCreated" />
+      <item itemvalue="JUnit.VendingMachineTest.vendReturnsInvalidSelection" />
+      <item itemvalue="JUnit.VendingMachineTest.vendReturnsItemWithChange" />
+      <item itemvalue="JUnit.VendingMachineTest.vendUpdatesItemQuantity" />
+      <item itemvalue="JUnit.VendingMachineTest.vendUpdatesMoneyAfterSale" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VendingMachineTest" />
-        <item itemvalue="JUnit.VendingMachineTest.firstTest" />
+        <item itemvalue="JUnit.VendingMachineTest.vendUpdatesMoneyAfterSale" />
+        <item itemvalue="JUnit.VendingMachineTest.vendReturnsItemWithChange" />
+        <item itemvalue="JUnit.VendingMachineTest.vendingMachineCreated" />
+        <item itemvalue="JUnit.VendingMachineTest.vendUpdatesItemQuantity" />
+        <item itemvalue="JUnit.VendingMachineTest.vendReturnsInvalidSelection" />
       </list>
     </recent_temporary>
   </component>
@@ -102,7 +173,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661179495228</updated>
-      <workItem from="1661179497516" duration="1325000" />
+      <workItem from="1661179497516" duration="2400000" />
+      <workItem from="1661300153909" duration="863000" />
+      <workItem from="1661435966245" duration="5666000" />
+      <workItem from="1661461418683" duration="6376000" />
+      <workItem from="1661544856915" duration="4092000" />
     </task>
     <task id="LOCAL-00001" summary="Initial config">
       <created>1661179840207</created>
@@ -122,7 +197,24 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="vending-machine" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
