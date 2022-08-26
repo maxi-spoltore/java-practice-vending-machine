@@ -23,22 +23,32 @@ public class VendingMachine {
 
     public String vend(String code, double credit) {
         Stock item = findItemByCode(items, code);
+        String itemName;
+        int itemQuantity;
+        double itemPrice;
+
         if (item == null) {
             return "Invalid selection! : Money in vending machine = " + String.format("%.2f", this.money);
         }
-        String itemName = item.getName();
+        itemName = item.getName();
+        itemPrice = item.getPrice();
+        itemQuantity = item.getQuantity();
 
-        double itemPrice = item.getPrice();
         if (itemPrice > credit) {
             return "Not enough money!";
         }
-        int itemQuantity = item.getQuantity();
+
         if (itemQuantity == 0) {
             return itemName + ": Out of stock!";
         }
 
-        int currentQuantity = item.getQuantity();
-        item.setQuantity(currentQuantity - 1);
+        double change = credit - itemPrice;
+        this.money += credit;
+        item.setQuantity(itemQuantity - 1);
+
+        if (change > 0) {
+            return "Vending " + itemName + " with " + String.format("%.2f", change) + " change";
+        }
         return "Vending " + itemName;
     }
 

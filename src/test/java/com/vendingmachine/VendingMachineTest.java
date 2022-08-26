@@ -17,16 +17,7 @@ public class VendingMachineTest {
         VendingMachine machine = new VendingMachine(items, 100.00);
 
         Assert.assertEquals(items, machine.getItems());
-        Assert.assertEquals(100.00, machine.getMoney(), 100.00);
-    }
-
-    @Test
-    public void vendReturnsItem() {
-        List<Stock> items = new ArrayList<Stock>();
-        items.add(new Stock("Milka Leger", "A01", 0.60, 10));
-        VendingMachine machine = new VendingMachine(items, 100.00);
-        String result = machine.vend("A01", 0.80);
-        Assert.assertEquals("Vending Milka Leger", result);
+        Assert.assertEquals(100.00, machine.getMoney(), 0.001);
     }
 
     @Test
@@ -66,5 +57,36 @@ public class VendingMachineTest {
         Assert.assertEquals(9, updatedItems.get(0).getQuantity());
         machine.vend("A01", 0.80);
         Assert.assertEquals(8, items.get(0).getQuantity());
+    }
+
+    @Test
+    public void vendReturnsItem() {
+        List<Stock> items = new ArrayList<Stock>();
+        items.add(new Stock("Milka Leger", "A01", 0.60, 10));
+        VendingMachine machine = new VendingMachine(items, 100.00);
+        String result = machine.vend("A01", 0.60);
+        Assert.assertEquals("Vending Milka Leger", result);
+    }
+
+    @Test
+    public void vendReturnsItemWithChange() {
+        List<Stock> items = new ArrayList<Stock>();
+        items.add(new Stock("Milka Leger", "A01", 0.60, 10));
+        items.add(new Stock("Coca Cola Zero", "A02", 1.50, 10));
+        VendingMachine machine = new VendingMachine(items, 100.00);
+        String result = machine.vend("A01", 0.80);
+        String result2 = machine.vend("A02", 2.50);
+        Assert.assertEquals("Vending Milka Leger with 0.20 change", result);
+        Assert.assertEquals("Vending Coca Cola Zero with 1.00 change", result2);
+    }
+
+    @Test
+    public void vendUpdatesMoneyAfterSale() {
+        List<Stock> items = new ArrayList<Stock>();
+        items.add(new Stock("Milka Leger", "A01", 0.60, 10));
+        VendingMachine machine = new VendingMachine(items, 100.00);
+        machine.vend("A01", 0.60);
+        double money = machine.getMoney();
+        Assert.assertEquals(100.60, money, 0.001);
     }
 }
